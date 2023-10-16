@@ -17,7 +17,7 @@ public class LoginPage extends Base{
 	@FindBy(name="username") private WebElement inputusername;
 	@FindBy(name="password") private WebElement inputpassword;
 	@FindBy(xpath="//button[@type='submit']") private WebElement LoginButton;
-	
+	@FindBy(xpath="") private WebElement abc;
 	
      public String getUsername()
      {

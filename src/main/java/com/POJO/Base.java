@@ -1,12 +1,14 @@
 package com.POJO;
 
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,18 +23,34 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base {
 	
+	FileInputStream fileinputstream;
 	public static WebDriver driver;
-	public Properties pro;
-	 
-	public void BrowserInitialization()
-	{
-		driver = new ChromeDriver();
-		pro = new Properties();
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-		driver.get(pro.getProperty("OrangeHRMurl"));
-		
-	}
 	
+	public static String projectpath= System.getProperty("user.dir"); 
+	
+	 public void LaunchTheWeb() throws IOException
+	 {
+		 fileinputstream = new FileInputStream(".\\src\\test\\resources\\Property\\Config.properties");
+		 
+		 driver= new EdgeDriver();
+		 
+		 driver.manage().window().maximize();
+		 driver.manage().deleteAllCookies();
+		 
+		 Properties prop= new Properties();
+		 
+		 prop.load(fileinputstream);
+		 
+		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		 
+		 driver.get(prop.getProperty("OrangeHRMurl"));
+		 
+	 }
+	 
+	 public void WaitForVisibility( String e)
+		{
+			WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
+			  wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(e)));
+		}
 }
 

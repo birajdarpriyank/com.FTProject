@@ -9,29 +9,44 @@ import com.POJO.Base;
 public class LoginPage extends Base{
 	
 	{
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver,this);
 	}
 	
-	
-	@FindBy(xpath="//p[text()='Username : Admin']")
-	WebElement Username;
-	
-	@FindBy(xpath="//p[text()='Password : admin123']")
-	WebElement Password;
-	
-	@FindBy(xpath="//input[@name='username']")
-	WebElement EnterUsername;
-	
-	@FindBy(xpath="//input[@name='password']")
-	WebElement EnterPassword;
-	
-	@FindBy(xpath="//button[@class='oxd-button oxd-button--medium oxd-button--main orangehrm-login-button']")
-	WebElement LoginButton;
-	
-	@FindBy(xpath="//p[@class='oxd-text oxd-text--p orangehrm-login-forgot-header']")
-	WebElement ForgotYourPassword;
+	@FindBy(xpath="//p[text()='Username : Admin']") private WebElement username;
+	@FindBy(xpath="//p[text()='Password : admin123']") private WebElement password;
+	@FindBy(name="username") private WebElement inputusername;
+	@FindBy(name="password") private WebElement inputpassword;
+	@FindBy(xpath="//button[@type='submit']") private WebElement LoginButton;
 	
 	
+     public String getUsername()
+     {
+    	WaitForVisibility("//p[text()='Username : Admin']");
+    	
+    	 return username.getText();
+    	 
+    	
+     }
+     
+     public String getPassword()
+     {
+    	 return password.getText();
+     }
+     
+     public void ClickOnLoginButton()
+     {
+    	 LoginButton.click();
+     }
+
+	
+	public void setInputusername(String Setusername) {
+		 inputusername.sendKeys(Setusername);
+	}
+
+	
+	public void setInputpassword(String Setpassword) {
+		 inputpassword.sendKeys(Setpassword);
+	}
 	
 	
 

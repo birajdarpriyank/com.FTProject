@@ -1,28 +1,208 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-16T13:00:51 IST" name="Default suite" finished-at="2023-10-16T13:03:56 IST" duration-ms="185139">
+  <suite started-at="2023-10-19T09:43:05 IST" name="Default suite" finished-at="2023-10-19T09:47:51 IST" duration-ms="286283">
     <groups>
     </groups>
-    <test started-at="2023-10-16T13:00:51 IST" name="Default test" finished-at="2023-10-16T13:03:56 IST" duration-ms="185139">
+    <test started-at="2023-10-19T09:43:05 IST" name="Default test" finished-at="2023-10-19T09:47:51 IST" duration-ms="286283">
       <class name="com.Tests.LoginTest">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.Tests.LoginTest@496bc455]" started-at="2023-10-16T13:00:52 IST" name="SetUp" finished-at="2023-10-16T13:03:49 IST" duration-ms="177781" status="PASS">
+        <test-method is-config="true" signature="SetUp(java.lang.reflect.Method)[pri:0, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:43:05 IST" name="SetUp" finished-at="2023-10-19T09:43:30 IST" duration-ms="25283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Tests.LoginTest.ValidateLoginPageLogo()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="LoginWithValidCredential()[pri:0, instance:com.Tests.LoginTest@496bc455]" started-at="2023-10-16T13:03:49 IST" name="LoginWithValidCredential" finished-at="2023-10-16T13:03:53 IST" duration-ms="3702" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="ValidateLoginPageLogo()[pri:0, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:43:30 IST" name="ValidateLoginPageLogo" finished-at="2023-10-19T09:43:32 IST" duration-ms="1644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateLoginPageLogo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:43:32 IST" name="tearDown" finished-at="2023-10-19T09:43:41 IST" duration-ms="9517" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="SetUp(java.lang.reflect.Method)[pri:0, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:43:41 IST" name="SetUp" finished-at="2023-10-19T09:43:59 IST" duration-ms="18063" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Tests.LoginTest.ValidateLoginPageTitle()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="ValidateLoginPageTitle()[pri:1, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:43:59 IST" name="ValidateLoginPageTitle" finished-at="2023-10-19T09:43:59 IST" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateLoginPageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:43:59 IST" name="tearDown" finished-at="2023-10-19T09:44:08 IST" duration-ms="8487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="SetUp(java.lang.reflect.Method)[pri:0, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:44:08 IST" name="SetUp" finished-at="2023-10-19T09:44:25 IST" duration-ms="16980" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Tests.LoginTest.ValidateLoginPageURL()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="ValidateLoginPageURL()[pri:2, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:44:25 IST" name="ValidateLoginPageURL" finished-at="2023-10-19T09:44:25 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateLoginPageURL -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:44:25 IST" name="tearDown" finished-at="2023-10-19T09:44:33 IST" duration-ms="8458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="SetUp(java.lang.reflect.Method)[pri:0, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:44:33 IST" name="SetUp" finished-at="2023-10-19T09:44:51 IST" duration-ms="17283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Tests.LoginTest.LoginWithValidCredential() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="LoginWithValidCredential()[pri:3, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:44:51 IST" name="LoginWithValidCredential" finished-at="2023-10-19T09:45:04 IST" duration-ms="13011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithValidCredential -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:45:04 IST" name="tearDown" finished-at="2023-10-19T09:45:12 IST" duration-ms="8551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="SetUp(java.lang.reflect.Method)[pri:0, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:45:12 IST" name="SetUp" finished-at="2023-10-19T09:45:26 IST" duration-ms="13814" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Tests.LoginTest.LoginWithInvalidCredential()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="LoginWithInvalidCredential()[pri:4, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:45:26 IST" name="LoginWithInvalidCredential" finished-at="2023-10-19T09:45:29 IST" duration-ms="3110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithInvalidCredential -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:45:29 IST" name="tearDown" finished-at="2023-10-19T09:45:37 IST" duration-ms="8360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="SetUp(java.lang.reflect.Method)[pri:0, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:45:37 IST" name="SetUp" finished-at="2023-10-19T09:45:51 IST" duration-ms="13793" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Tests.LoginTest.LoginWithBlankCredentials()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="LoginWithBlankCredentials()[pri:5, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:45:51 IST" name="LoginWithBlankCredentials" finished-at="2023-10-19T09:45:53 IST" duration-ms="1340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithBlankCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:45:53 IST" name="tearDown" finished-at="2023-10-19T09:46:01 IST" duration-ms="8521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="SetUp(java.lang.reflect.Method)[pri:0, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:46:01 IST" name="SetUp" finished-at="2023-10-19T09:46:14 IST" duration-ms="13011" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Tests.LoginTest.LoginWithUserNameOnly()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="LoginWithUserNameOnly()[pri:6, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:46:14 IST" name="LoginWithUserNameOnly" finished-at="2023-10-19T09:46:16 IST" duration-ms="1474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithUserNameOnly -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:46:16 IST" name="tearDown" finished-at="2023-10-19T09:46:24 IST" duration-ms="8681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="SetUp(java.lang.reflect.Method)[pri:0, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:46:24 IST" name="SetUp" finished-at="2023-10-19T09:46:41 IST" duration-ms="16712" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Tests.LoginTest.LoginWithEnterPasswordOnly()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="LoginWithEnterPasswordOnly()[pri:7, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:46:41 IST" name="LoginWithEnterPasswordOnly" finished-at="2023-10-19T09:46:44 IST" duration-ms="2551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithEnterPasswordOnly -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:46:44 IST" name="tearDown" finished-at="2023-10-19T09:46:52 IST" duration-ms="8453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="SetUp(java.lang.reflect.Method)[pri:0, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:46:52 IST" name="SetUp" finished-at="2023-10-19T09:47:12 IST" duration-ms="19774" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Tests.LoginTest.ValidateForgottenPasswordLink()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="ValidateForgottenPasswordLink()[pri:8, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:47:12 IST" name="ValidateForgottenPasswordLink" finished-at="2023-10-19T09:47:14 IST" duration-ms="2271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateForgottenPasswordLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:47:14 IST" name="tearDown" finished-at="2023-10-19T09:47:22 IST" duration-ms="8479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="SetUp(java.lang.reflect.Method)[pri:0, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:47:22 IST" name="SetUp" finished-at="2023-10-19T09:47:41 IST" duration-ms="18331" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Tests.LoginTest.ValidateOrangeHRMIncLink()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="ValidateOrangeHRMIncLink()[pri:9, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:47:41 IST" name="ValidateOrangeHRMIncLink" finished-at="2023-10-19T09:47:42 IST" duration-ms="1236" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+              <![CDATA[expected [https://www.orangehrm.com/] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy11.getText(Unknown Source)
-at com.POM.LoginPage.getUsername(LoginPage.java:26)
-at com.Tests.LoginTest.LoginWithValidCredential(LoginTest.java:35)
+              <![CDATA[java.lang.AssertionError: expected [https://www.orangehrm.com/] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at com.Tests.LoginTest.ValidateOrangeHRMIncLink(LoginTest.java:150)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -53,11 +233,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginWithValidCredential -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.LoginTest@496bc455]" started-at="2023-10-16T13:03:53 IST" name="tearDown" finished-at="2023-10-16T13:03:56 IST" duration-ms="3151" status="PASS">
+        </test-method> <!-- ValidateOrangeHRMIncLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.LoginTest@15bb5034]" started-at="2023-10-19T09:47:42 IST" name="tearDown" finished-at="2023-10-19T09:47:51 IST" duration-ms="8921" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

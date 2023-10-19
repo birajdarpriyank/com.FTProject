@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\SAM\AppData\Local\Temp\testng-eclipse--1518307783\testng-customsuite.xml</span>
+                    <span>C:\Users\SAM\AppData\Local\Temp\testng-eclipse-1316883211\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,10 +103,64 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.Tests.LoginTest" class="method navigator-link" hash-for-method="LoginWithValidCredential">LoginWithValidCredential</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.Tests.LoginTest" class="method navigator-link" hash-for-method="ValidateOrangeHRMIncLink">ValidateOrangeHRMIncLink</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Tests.LoginTest" class="method navigator-link" hash-for-method="LoginWithBlankCredentials">LoginWithBlankCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Tests.LoginTest" class="method navigator-link" hash-for-method="LoginWithEnterPasswordOnly">LoginWithEnterPasswordOnly</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Tests.LoginTest" class="method navigator-link" hash-for-method="LoginWithInvalidCredential">LoginWithInvalidCredential</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Tests.LoginTest" class="method navigator-link" hash-for-method="LoginWithUserNameOnly">LoginWithUserNameOnly</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Tests.LoginTest" class="method navigator-link" hash-for-method="LoginWithValidCredential">LoginWithValidCredential</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Tests.LoginTest" class="method navigator-link" hash-for-method="ValidateForgottenPasswordLink">ValidateForgottenPasswordLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Tests.LoginTest" class="method navigator-link" hash-for-method="ValidateLoginPageLogo">ValidateLoginPageLogo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Tests.LoginTest" class="method navigator-link" hash-for-method="ValidateLoginPageTitle">ValidateLoginPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Tests.LoginTest" class="method navigator-link" hash-for-method="ValidateLoginPageURL">ValidateLoginPageURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -126,15 +180,17 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LoginWithValidCredential">
-                  </a> <!-- LoginWithValidCredential -->
-                  <span class="method-name">LoginWithValidCredential</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy11.getText(Unknown Source)
-	at com.POM.LoginPage.getUsername(LoginPage.java:26)
-	at com.Tests.LoginTest.LoginWithValidCredential(LoginTest.java:35)
+                  <a name="ValidateOrangeHRMIncLink">
+                  </a> <!-- ValidateOrangeHRMIncLink -->
+                  <span class="method-name">ValidateOrangeHRMIncLink</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [https://www.orangehrm.com/] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.Tests.LoginTest.ValidateOrangeHRMIncLink(LoginTest.java:150)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -169,10 +225,81 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginWithBlankCredentials">
+                  </a> <!-- LoginWithBlankCredentials -->
+                  <span class="method-name">LoginWithBlankCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginWithEnterPasswordOnly">
+                  </a> <!-- LoginWithEnterPasswordOnly -->
+                  <span class="method-name">LoginWithEnterPasswordOnly</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginWithInvalidCredential">
+                  </a> <!-- LoginWithInvalidCredential -->
+                  <span class="method-name">LoginWithInvalidCredential</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginWithUserNameOnly">
+                  </a> <!-- LoginWithUserNameOnly -->
+                  <span class="method-name">LoginWithUserNameOnly</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginWithValidCredential">
+                  </a> <!-- LoginWithValidCredential -->
+                  <span class="method-name">LoginWithValidCredential</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidateForgottenPasswordLink">
+                  </a> <!-- ValidateForgottenPasswordLink -->
+                  <span class="method-name">ValidateForgottenPasswordLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidateLoginPageLogo">
+                  </a> <!-- ValidateLoginPageLogo -->
+                  <span class="method-name">ValidateLoginPageLogo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidateLoginPageTitle">
+                  </a> <!-- ValidateLoginPageTitle -->
+                  <span class="method-name">ValidateLoginPageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidateLoginPageURL">
+                  </a> <!-- ValidateLoginPageURL -->
+                  <span class="method-name">ValidateLoginPageURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\SAM\AppData\Local\Temp\testng-eclipse--1518307783\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\SAM\AppData\Local\Temp\testng-eclipse-1316883211\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -221,16 +348,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'LoginWithValidCredential')
 data.setCell(0, 2, 'com.Tests.LoginTest')
-data.setCell(0, 3, 3702);
+data.setCell(0, 3, 13011);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'LoginWithInvalidCredential')
+data.setCell(1, 2, 'com.Tests.LoginTest')
+data.setCell(1, 3, 3110);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'LoginWithEnterPasswordOnly')
+data.setCell(2, 2, 'com.Tests.LoginTest')
+data.setCell(2, 3, 2551);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'ValidateForgottenPasswordLink')
+data.setCell(3, 2, 'com.Tests.LoginTest')
+data.setCell(3, 3, 2271);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'ValidateLoginPageLogo')
+data.setCell(4, 2, 'com.Tests.LoginTest')
+data.setCell(4, 3, 1644);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'LoginWithUserNameOnly')
+data.setCell(5, 2, 'com.Tests.LoginTest')
+data.setCell(5, 3, 1474);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'LoginWithBlankCredentials')
+data.setCell(6, 2, 'com.Tests.LoginTest')
+data.setCell(6, 3, 1340);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'ValidateOrangeHRMIncLink')
+data.setCell(7, 2, 'com.Tests.LoginTest')
+data.setCell(7, 3, 1236);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'ValidateLoginPageTitle')
+data.setCell(8, 2, 'com.Tests.LoginTest')
+data.setCell(8, 3, 26);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'ValidateLoginPageURL')
+data.setCell(9, 2, 'com.Tests.LoginTest')
+data.setCell(9, 3, 19);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -258,18 +421,126 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.Tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">SetUp</span>
+                <span class="method-name">SetUp(public void com.Tests.LoginTest.ValidateLoginPageLogo())</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValidateLoginPageLogo</span>
+                <span class="method-start">25285 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">26937 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp(public void com.Tests.LoginTest.ValidateLoginPageTitle())</span>
+                <span class="method-start">36459 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValidateLoginPageTitle</span>
+                <span class="method-start">54522 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">54550 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp(public void com.Tests.LoginTest.ValidateLoginPageURL())</span>
+                <span class="method-start">63038 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValidateLoginPageURL</span>
+                <span class="method-start">80018 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">80039 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp(public void com.Tests.LoginTest.LoginWithValidCredential() throws java.lang.InterruptedException)</span>
+                <span class="method-start">88499 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LoginWithValidCredential</span>
+                <span class="method-start">105783 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">118797 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp(public void com.Tests.LoginTest.LoginWithInvalidCredential())</span>
+                <span class="method-start">127350 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LoginWithInvalidCredential</span>
+                <span class="method-start">141165 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">144278 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp(public void com.Tests.LoginTest.LoginWithBlankCredentials())</span>
+                <span class="method-start">152643 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LoginWithBlankCredentials</span>
+                <span class="method-start">166436 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">167777 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp(public void com.Tests.LoginTest.LoginWithUserNameOnly())</span>
+                <span class="method-start">176300 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LoginWithUserNameOnly</span>
+                <span class="method-start">189311 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">190787 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp(public void com.Tests.LoginTest.LoginWithEnterPasswordOnly())</span>
+                <span class="method-start">199470 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LoginWithEnterPasswordOnly</span>
+                <span class="method-start">216182 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">218736 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp(public void com.Tests.LoginTest.ValidateForgottenPasswordLink())</span>
+                <span class="method-start">227191 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValidateForgottenPasswordLink</span>
+                <span class="method-start">246966 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">249240 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp(public void com.Tests.LoginTest.ValidateOrangeHRMIncLink())</span>
+                <span class="method-start">257720 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">LoginWithValidCredential</span>
-                <span class="method-start">177783 ms</span>
+                <span class="method-name">ValidateOrangeHRMIncLink</span>
+                <span class="method-start">276052 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">181534 ms</span>
+                <span class="method-start">277290 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

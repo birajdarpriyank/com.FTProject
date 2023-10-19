@@ -19,29 +19,34 @@ import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.Utilities.utility;
+
 
 
 public class Base {
 	
-	FileInputStream fileinputstream;
 	public static WebDriver driver;
+	
+	public static Properties prop;
+	
+	FileInputStream fileinputstream;
 	
 	public static String projectpath= System.getProperty("user.dir"); 
 	
-	 public void LaunchTheWeb() throws IOException
+	 public void BrowserInitialization() throws IOException
 	 {
 		 fileinputstream = new FileInputStream(".\\src\\test\\resources\\Property\\Config.properties");
 		 
 		 driver= new EdgeDriver();
 		 
+		 utility.ImplicitlyWait();
+		 
 		 driver.manage().window().maximize();
 		 driver.manage().deleteAllCookies();
 		 
-		 Properties prop= new Properties();
+		  prop= new Properties();
 		 
 		 prop.load(fileinputstream);
-		 
-		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		 
 		 driver.get(prop.getProperty("OrangeHRMurl"));
 		 
@@ -49,7 +54,7 @@ public class Base {
 	 
 	 public void WaitForVisibility( String e)
 		{
-			WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
+			WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(60));
 			  wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(e)));
 		}
 }

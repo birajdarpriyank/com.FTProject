@@ -7,7 +7,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="SetUp"/>
-          <include name="LoginWithValidCredential"/>
+          <include name="ValidateOrangeHRMIncLink"/>
         </methods>
       </class> <!-- com.Tests.LoginTest -->
     </classes>

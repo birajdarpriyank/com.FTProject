@@ -1,6 +1,8 @@
 package com.Tests;
 
 import java.io.IOException;
+
+
 import java.lang.reflect.Method;
 
 import org.openqa.selenium.WebDriver;
@@ -17,6 +19,7 @@ public class LoginTest extends Base {
 	
 LoginPage login;
 SoftAssert soft = new SoftAssert();
+
 	
 	@BeforeMethod
 	public void SetUp(Method m) throws IOException 
@@ -28,10 +31,12 @@ SoftAssert soft = new SoftAssert();
 	}
 	
 	@Test(priority=0)
-	public void ValidateLoginPageLogo()
+	public void ValidateLoginPageLogo() throws InterruptedException
 	{
+		Thread.sleep(6000);
 		boolean Actual = login.LogoIsDisplayed();
 		soft.assertTrue(Actual);
+		soft.assertAll();
 	}
 	
 	@Test(priority=1)
@@ -54,8 +59,8 @@ SoftAssert soft = new SoftAssert();
 	@Test(priority=3)
 	public void LoginWithValidCredential() throws InterruptedException
 	{
-		login.setInputusername(login.getUsername().substring(11));
-		login.setInputpassword(login.getPassword().substring(11));
+		login.setInputusername(login.getUsername());
+		login.setInputpassword(login.getPassword());
 		Thread.sleep(8000);
 		login.ClickOnLoginButton();
 		
@@ -151,7 +156,7 @@ SoftAssert soft = new SoftAssert();
 	}
 	
 	@AfterMethod
-	public void tearDown() throws InterruptedException
+	public void TearDown() throws InterruptedException
 	
 	{
 		Thread.sleep(8000);

@@ -1,48 +1,86 @@
 package com.Utilities;
 
 import java.io.FileInputStream;
+
+
+
 import java.io.IOException;
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
 
-import org.apache.poi.sl.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.POJO.Base;
 
+import java.util.Map.Entry;
+
 public class utility extends Base{
 
-	public static void ImplicitlyWait()
+	public static void Implicitlywait()
+	 {
+		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+		  
+	 }
+	 
+	public static Sheet getsheet(String sheetname) throws IOException
 	{
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		FileInputStream fileinputstream = new FileInputStream(projectpath+"\\src\\main\\resources\\Exeldata\\OrangeHrmLogin.xlsx");
+		
+		Sheet sh=WorkbookFactory.create(fileinputstream).getSheet(sheetname);
+		return sh;
 	}
 	
-	public static XSSFSheet getsheet(String sheetname) throws IOException
+	public static Object getSingleData(int rowNum,int cellNum,Sheet sh)
 	{
-		FileInputStream fis = new FileInputStream(projectpath+".\\src\\test\\resources\\ExcelData\\OrangeHRM.xlsx");
+		if(sh.getRow(rowNum).getCell(cellNum).getCellType().toString().equalsIgnoreCase("string"))
+		{
+			String ab=sh.getRow(rowNum).getCell(cellNum).getStringCellValue();
+			System.out.println(ab);
+			return ab;
+		}
+		else {
+			double ab=sh.getRow(rowNum).getCell(cellNum).getNumericCellValue();
+			return ab;
+		}
 		
-		XSSFWorkbook workbook = new XSSFWorkbook(fis);
-		
-		XSSFSheet sheet = workbook.getSheet(sheetname);
-		
-		return sheet;
+			
 	}
 	
-	public static Object getSingleData(int rownum, int cellnum, XSSFSheet sheet)
+	public static Map.Entry getAllData(Sheet sh) throws IOException
 	{
-	     if(sheet.getRow(rownum).getCell(cellnum).getCellType().toString().equalsIgnoreCase("string"))
-	     {
-	      sheet.getRow(rownum).getCell(cellnum).getStringCellValue();
-	      
-	     }
-	     else {
-	    	 sheet.getRow(rownum).getCell(cellnum).getNumericCellValue();
-	     }
-	     return sheet;
-	}
-	
+		
 
-	
+		HashMap<Object,Object> map = new HashMap();
+		
+		for(int i=0;i<=sh.getLastRowNum();i++)
+		{
+			int cellNum = sh.getRow(i).getLastCellNum();
+				map.put(sh.getRow(i).getCell(0).getStringCellValue(),sh.getRow(i).getCell(1).getStringCellValue());
+			
+		}
+		//System.out.println(map);
+		
+		return (Entry) map.entrySet();
+		
+	}
+	 
+	 
+	 
+	 public void WaitForVisibility(String e)
+		{
+			WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
+			  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(e)));
+		}
+	  
+	 public static  void AlertIsPresent()
+	 {
+		 WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+		 wait.until(ExpectedConditions.alertIsPresent());
+	 }
 	
 }

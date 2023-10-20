@@ -1,6 +1,7 @@
 package com.POJO;
 
 import java.io.FileInputStream;
+
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
@@ -29,33 +30,26 @@ public class Base {
 	
 	public static Properties prop;
 	
-	FileInputStream fileinputstream;
-	
 	public static String projectpath= System.getProperty("user.dir"); 
 	
-	 public void BrowserInitialization() throws IOException
+	 public WebDriver BrowserInitialization() throws IOException
 	 {
-		 fileinputstream = new FileInputStream(".\\src\\test\\resources\\Property\\Config.properties");
-		 
 		 driver= new EdgeDriver();
 		 
-		 utility.ImplicitlyWait();
+		 utility.Implicitlywait();
 		 
 		 driver.manage().window().maximize();
 		 driver.manage().deleteAllCookies();
 		 
 		  prop= new Properties();
 		 
+		  FileInputStream fileinputstream = new FileInputStream("E:\\DESK DATA\\eclipse-workspace\\com.cucumberprojectshrhealthcare\\src\\test\\resources\\Property\\Config.properties");
+			 
 		 prop.load(fileinputstream);
 		 
 		 driver.get(prop.getProperty("OrangeHRMurl"));
 		 
+		 return driver;
 	 }
-	 
-	 public void WaitForVisibility( String e)
-		{
-			WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(60));
-			  wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(e)));
-		}
 }
 

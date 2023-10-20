@@ -2,6 +2,8 @@ package com.POM;
 
 import org.openqa.selenium.WebDriver;
 
+
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -11,8 +13,7 @@ import com.POJO.Base;
 public class LoginPage extends Base{
 	
 	HomePage home = new HomePage();
-	ForgottenPasswordPage forgotten =new ForgottenPasswordPage();
-	OrangeHRMIncPage HRMInc = new OrangeHRMIncPage();
+	public OrangeHRMIncPage HRMInc = new OrangeHRMIncPage();
 	
 	{
 		PageFactory.initElements(driver,this);
@@ -78,14 +79,14 @@ public class LoginPage extends Base{
      {
     	 String a = username.getText();
     	 System.out.println("** UserName is get **");
-    	 return a;
+    	 return a.substring(a.indexOf('A'));
      }
      
      public String getPassword()
      {
     	 String a = password.getText();
     	 System.out.println("** Password is get **");
-    	 return a;
+    	 return a.substring(a.lastIndexOf('a'));
      }
      
      public HomePage ClickOnLoginButton()
@@ -145,11 +146,10 @@ public class LoginPage extends Base{
 		return a;
 	}
 	
-	public ForgottenPasswordPage ClickOnForgottenPasswordLink()
+	public void ClickOnForgottenPasswordLink()
 	{
 		ForgottenPasswordLink.click();
 		System.out.println("** Clicked on ForgottenPasswordLink **");
-		return forgotten;
 		
 	}
 	

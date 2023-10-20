@@ -93,10 +93,12 @@ SoftAssert soft = new SoftAssert();
 		login.ClickOnLoginButton();
 		
 		String Actual = login.ErrorMessegeRequireforUsername();
+		System.out.println(Actual);
 		String Expected = prop.getProperty("EnterBlankUsername");
 		Assert.assertEquals(Actual, Expected);
 		
 		String Actual1 = login.ErrorMessegeRequiredforpassword();
+		System.out.println(Actual1);
 		String Expected1 = prop.getProperty("EnterBlankPassword");
 		Assert.assertEquals(Actual1, Expected1);
 		

@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
+<testng-results ignored="16" total="17" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-20T06:26:26 IST" name="Default suite" finished-at="2023-10-20T06:27:20 IST" duration-ms="53850">
+  <suite started-at="2023-10-20T13:24:05 IST" name="Default suite" finished-at="2023-10-20T13:26:10 IST" duration-ms="125084">
     <groups>
     </groups>
-    <test started-at="2023-10-20T06:26:26 IST" name="Default test" finished-at="2023-10-20T06:27:20 IST" duration-ms="53850">
-      <class name="com.Tests.HomeDashboardTest">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.Tests.HomeDashboardTest@449a4f23]" started-at="2023-10-20T06:26:27 IST" name="SetUp" finished-at="2023-10-20T06:27:17 IST" duration-ms="50079" status="PASS">
+    <test started-at="2023-10-20T13:24:05 IST" name="Default test" finished-at="2023-10-20T13:26:10 IST" duration-ms="125084">
+      <class name="com.Tests.HomeTest">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.Tests.HomeTest@76b1e9b8]" started-at="2023-10-20T13:24:05 IST" name="SetUp" finished-at="2023-10-20T13:25:47 IST" duration-ms="102299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="ValidateHomePageURL()[pri:0, instance:com.Tests.HomeDashboardTest@449a4f23]" started-at="2023-10-20T06:27:17 IST" name="ValidateHomePageURL" finished-at="2023-10-20T06:27:20 IST" duration-ms="3691" status="PASS">
+        <test-method signature="ValidateClickedOnPerformance_Module()[pri:10, instance:com.Tests.HomeTest@76b1e9b8]" started-at="2023-10-20T13:25:47 IST" name="ValidateClickedOnPerformance_Module" finished-at="2023-10-20T13:26:06 IST" duration-ms="18494" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateHomePageURL -->
-      </class> <!-- com.Tests.HomeDashboardTest -->
+        </test-method> <!-- ValidateClickedOnPerformance_Module -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.Tests.HomeTest@76b1e9b8]" started-at="2023-10-20T13:26:06 IST" name="TearDown" finished-at="2023-10-20T13:26:10 IST" duration-ms="4045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.Tests.HomeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,5 +1,7 @@
 package com.POM;
 
+import java.util.Set;
+
 import org.openqa.selenium.WebElement;
 
 
@@ -23,22 +25,22 @@ public class HomePage extends Base{
 	@FindBy(xpath="//input[@fdprocessedid='ruwi0k']") 
 	private WebElement SearchInput;
 	
-	@FindBy(xpath="//span[text()='Admin']")
+	@FindBy(xpath="//a[@class='oxd-main-menu-item active toggle']")
 	private WebElement Admin_Module;
 	
-	@FindBy(xpath="//span[text()='PIM']")
+	@FindBy(xpath="(//a[@class='oxd-main-menu-item toggle'])[1]")
 	private WebElement PIM_Module;
 	
-	@FindBy(xpath="//span[text()='Leave']")
+	@FindBy(xpath="(//a[@class='oxd-main-menu-item toggle'])[2]")
 	private WebElement Leave_Module;
 	
-	@FindBy(xpath="//span[text()='Time']") 
+	@FindBy(xpath="(//a[@class='oxd-main-menu-item toggle'])[3]") 
 	private WebElement Time_Module;
 	
-	@FindBy(xpath="//span[text()='Recruitment']") 
+	@FindBy(xpath="(//a[@class='oxd-main-menu-item toggle'])[4]") 
 	private WebElement Recruitment_Module;
 	
-	@FindBy(xpath="//span[text()='My Info']") 
+	@FindBy(xpath="(//a[@class='oxd-main-menu-item toggle'])[5]") 
 	private WebElement MyInfo_Module;
 	
 	@FindBy(xpath="//span[text()='Performance']")
@@ -68,11 +70,17 @@ public class HomePage extends Base{
 	@FindBy(xpath="//ul[@role='menu']")
 	private WebElement Menu;
 	
+	@FindBy(xpath="//ul[@class='oxd-main-menu']")
+	private WebElement AllModules;
+	
 	@FindBy(xpath="//i[@class='oxd-icon bi-list oxd-topbar-header-hamburger']")
 	private WebElement ModulesListIcon;
 	
 	@FindBy(xpath="//i[@class='oxd-icon bi-x oxd-sidepanel-header-close']")
 	private WebElement CloseIcon;
+	
+	@FindBy(xpath="//ul[@class='oxd-main-menu']/li")
+	private WebElement AfterSearchingelemet;
 	
 	public boolean LogoisDisplayed()
 	{
@@ -101,7 +109,7 @@ public class HomePage extends Base{
 		{
 			HideElement.click();
 		}
-		System.out.println("** Clicked on ");
+		System.out.println("** Clicked on HideElement **");
 	}
 	
 	public void ClickOnAdmin_Module()
@@ -114,81 +122,130 @@ public class HomePage extends Base{
 	
 	public void ClickOnPIM_Module()
 	{
-		if(Admin_Module.isDisplayed())
+		if(PIM_Module.isDisplayed())
 		{
-			Admin_Module.click();
+			PIM_Module.click();
 		}
 	}
 	
 	public void ClickOnLeave_Module()
 	{
-		if(Admin_Module.isDisplayed())
+		if(Leave_Module.isDisplayed())
 		{
-			Admin_Module.click();
+			Leave_Module.click();
 		}
 	}
 	
 	public void ClickOnTime_Module()
 	{
-		if(Admin_Module.isDisplayed())
+		if(Time_Module.isDisplayed())
 		{
-			Admin_Module.click();
+			Time_Module.click();
 		}
 	}
 	
 	public void ClickOnRecruitment_Module()
 	{
-		if(Admin_Module.isDisplayed())
+		if(Recruitment_Module.isDisplayed())
 		{
-			Admin_Module.click();
+			Recruitment_Module.click();
 		}
 	}
 	
 	public void ClickOnMyInfo_Module()
 	{
-		if(Admin_Module.isDisplayed())
+		if(MyInfo_Module.isDisplayed())
 		{
-			Admin_Module.click();
+			MyInfo_Module.click();
 		}
 	}
 	
 	public void ClickOnPerformance_Module()
 	{
-		if(Admin_Module.isDisplayed())
+		if(Performance_Module.isDisplayed())
 		{
-			Admin_Module.click();
+			Performance_Module.click();
 		}
 	}
 	
-	public void ClickOnDashboard_Module()
+	public void ClickOnDirectory_Module()
 	{
-		if(Admin_Module.isDisplayed())
+		if(Directory_Module.isDisplayed())
 		{
-			Admin_Module.click();
+			Directory_Module.click();
 		}
 	}
 	
 	public void ClickOnMaintenance_Module()
 	{
-		if(Admin_Module.isDisplayed())
+		if(Maintenance_Module.isDisplayed())
 		{
-			Admin_Module.click();
+			Maintenance_Module.click();
 		}
 	}
 	
 	public void ClickOnClaim_Module()
 	{
-		if(Admin_Module.isDisplayed())
+		if(Claim_Module.isDisplayed())
 		{
-			Admin_Module.click();
+			Claim_Module.click();
 		}
+		System.out.println("** Clicked on ");
 	}
 	
 	public void ClickOnBuzz_Module()
 	{
-		if(Admin_Module.isDisplayed())
+		if(Buzz_Module.isDisplayed())
 		{
-			Admin_Module.click();
+			Buzz_Module.click();
+		}
+		
+		System.out.println("** Clicked on Admin **");
+	}
+	
+	public void ClickOnHelp()
+	{
+		if(Help.isDisplayed())
+		{
+			Help.click();
 		}
 	}
+	
+	public void SendkeysSearchBox(String e)
+	{
+		SearchInput.sendKeys(e);
+	}
+	
+	public void HideAllModules()
+	{
+		if(AllModules.isDisplayed())
+		{
+			CloseIcon.click();
+		}
+	}
+	
+	public void UnhideAllModules()
+	{
+		if(!AllModules.isDisplayed())
+		{
+			ModulesListIcon.click();
+		}
+	}
+
+	
+	public void ClickOnProfile()
+	{
+	     if(Profile.isDisplayed())
+	     {
+	    	 Profile.click();
+	     }
+	}
+	
+	public String AfterSearchingResult()
+	{
+		String a = AfterSearchingelemet.getText();
+		return a;
+	}
+	
+
 }

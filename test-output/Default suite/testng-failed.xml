@@ -5,8 +5,9 @@
     <classes>
       <class name="com.Tests.HomeDashboardTest">
         <methods>
+          <include name="ValidateLogoIsDisplayed"/>
           <include name="SetUp"/>
-          <include name="ValidateHomePageURL"/>
+          <include name="TearDown"/>
         </methods>
       </class> <!-- com.Tests.HomeDashboardTest -->
     </classes>

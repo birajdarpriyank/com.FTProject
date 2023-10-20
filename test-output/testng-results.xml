@@ -1,20 +1,192 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="13" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-20T06:26:26 IST" name="Default suite" finished-at="2023-10-20T06:27:20 IST" duration-ms="53850">
+  <suite started-at="2023-10-20T08:05:32 IST" name="Default suite" finished-at="2023-10-20T08:27:20 IST" duration-ms="1308046">
     <groups>
     </groups>
-    <test started-at="2023-10-20T06:26:26 IST" name="Default test" finished-at="2023-10-20T06:27:20 IST" duration-ms="53850">
+    <test started-at="2023-10-20T08:05:32 IST" name="Default test" finished-at="2023-10-20T08:27:20 IST" duration-ms="1308046">
       <class name="com.Tests.HomeDashboardTest">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.Tests.HomeDashboardTest@449a4f23]" started-at="2023-10-20T06:26:27 IST" name="SetUp" finished-at="2023-10-20T06:27:17 IST" duration-ms="50079" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:05:32 IST" name="SetUp" finished-at="2023-10-20T08:06:47 IST" duration-ms="74549" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="ValidateHomePageURL()[pri:0, instance:com.Tests.HomeDashboardTest@449a4f23]" started-at="2023-10-20T06:27:17 IST" name="ValidateHomePageURL" finished-at="2023-10-20T06:27:20 IST" duration-ms="3691" status="PASS">
+        <test-method signature="ValidateClickedOnAdminModule()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:06:47 IST" name="ValidateClickedOnAdminModule" finished-at="2023-10-20T08:06:57 IST" duration-ms="10752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateClickedOnAdminModule -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:06:57 IST" name="SetUp" finished-at="2023-10-20T08:07:53 IST" duration-ms="55379" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="ValidateClickedOnBuzz_Module()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:07:53 IST" name="ValidateClickedOnBuzz_Module" finished-at="2023-10-20T08:07:56 IST" duration-ms="2990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateClickedOnBuzz_Module -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:07:56 IST" name="SetUp" finished-at="2023-10-20T08:09:38 IST" duration-ms="102253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="ValidateClickedOnClaim_Module()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:09:38 IST" name="ValidateClickedOnClaim_Module" finished-at="2023-10-20T08:09:50 IST" duration-ms="11976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateClickedOnClaim_Module -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:09:50 IST" name="SetUp" finished-at="2023-10-20T08:11:05 IST" duration-ms="75139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="ValidateClickedOnDirectory_Module()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:11:05 IST" name="ValidateClickedOnDirectory_Module" finished-at="2023-10-20T08:11:18 IST" duration-ms="13033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateClickedOnDirectory_Module -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:11:18 IST" name="SetUp" finished-at="2023-10-20T08:12:10 IST" duration-ms="51290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="ValidateClickedOnInfo_Module()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:12:10 IST" name="ValidateClickedOnInfo_Module" finished-at="2023-10-20T08:12:14 IST" duration-ms="4477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateClickedOnInfo_Module -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:12:14 IST" name="SetUp" finished-at="2023-10-20T08:13:21 IST" duration-ms="67004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="ValidateClickedOnLeave_Module()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:13:21 IST" name="ValidateClickedOnLeave_Module" finished-at="2023-10-20T08:13:33 IST" duration-ms="11600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateClickedOnLeave_Module -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:13:33 IST" name="SetUp" finished-at="2023-10-20T08:14:26 IST" duration-ms="53654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="ValidateClickedOnMaintenance_Module()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:14:26 IST" name="ValidateClickedOnMaintenance_Module" finished-at="2023-10-20T08:14:46 IST" duration-ms="19902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateClickedOnMaintenance_Module -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:14:46 IST" name="SetUp" finished-at="2023-10-20T08:16:45 IST" duration-ms="118534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="ValidateClickedOnPIM_Module()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:16:45 IST" name="ValidateClickedOnPIM_Module" finished-at="2023-10-20T08:16:51 IST" duration-ms="6178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateClickedOnPIM_Module -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:16:51 IST" name="SetUp" finished-at="2023-10-20T08:18:25 IST" duration-ms="94176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="ValidateClickedOnPerformance_Module()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:18:25 IST" name="ValidateClickedOnPerformance_Module" finished-at="2023-10-20T08:18:31 IST" duration-ms="6326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateClickedOnPerformance_Module -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:18:31 IST" name="SetUp" finished-at="2023-10-20T08:21:08 IST" duration-ms="156982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="ValidateClickedOnRecruitment_Module()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:21:08 IST" name="ValidateClickedOnRecruitment_Module" finished-at="2023-10-20T08:21:30 IST" duration-ms="21230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateClickedOnRecruitment_Module -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:21:30 IST" name="SetUp" finished-at="2023-10-20T08:23:11 IST" duration-ms="101750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="ValidateClickedOnTime_Module()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:23:11 IST" name="ValidateClickedOnTime_Module" finished-at="2023-10-20T08:23:22 IST" duration-ms="10491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateClickedOnTime_Module -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:23:22 IST" name="SetUp" finished-at="2023-10-20T08:24:42 IST" duration-ms="79837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="ValidateHomePageTitle()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:24:42 IST" name="ValidateHomePageTitle" finished-at="2023-10-20T08:24:48 IST" duration-ms="6189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateHomePageTitle -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:24:48 IST" name="SetUp" finished-at="2023-10-20T08:26:42 IST" duration-ms="114313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="ValidateHomePageURL()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:26:42 IST" name="ValidateHomePageURL" finished-at="2023-10-20T08:26:42 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateHomePageURL -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:26:42 IST" name="SetUp" finished-at="2023-10-20T08:27:06 IST" duration-ms="23337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="ValidateLogoIsDisplayed()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:27:06 IST" name="ValidateLogoIsDisplayed" finished-at="2023-10-20T08:27:10 IST" duration-ms="4082" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Admin/User Management] but found [OrangeHRM],
+expected [Buzz] but found [OrangeHRM],
+expected [Claim] but found [OrangeHRM],
+expected [Directory] but found [OrangeHRM],
+expected [PIM] but found [OrangeHRM],
+expected [Leave] but found [OrangeHRM],
+expected [Administrator Access] but found [OrangeHRM],
+expected [PIM] but found [OrangeHRM],
+expected [Performance/Manage Reviews] but found [OrangeHRM],
+expected [Recruitment] but found [OrangeHRM],
+expected [Time/Timesheets] but found [OrangeHRM],
+expected [Dashboard] but found [OrangeHRM]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Admin/User Management] but found [OrangeHRM],
+expected [Buzz] but found [OrangeHRM],
+expected [Claim] but found [OrangeHRM],
+expected [Directory] but found [OrangeHRM],
+expected [PIM] but found [OrangeHRM],
+expected [Leave] but found [OrangeHRM],
+expected [Administrator Access] but found [OrangeHRM],
+expected [PIM] but found [OrangeHRM],
+expected [Performance/Manage Reviews] but found [OrangeHRM],
+expected [Recruitment] but found [OrangeHRM],
+expected [Time/Timesheets] but found [OrangeHRM],
+expected [Dashboard] but found [OrangeHRM]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.Tests.HomeDashboardTest.ValidateLogoIsDisplayed(HomeDashboardTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateLogoIsDisplayed -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.Tests.HomeDashboardTest@1349883]" started-at="2023-10-20T08:27:11 IST" name="TearDown" finished-at="2023-10-20T08:27:20 IST" duration-ms="8735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
       </class> <!-- com.Tests.HomeDashboardTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

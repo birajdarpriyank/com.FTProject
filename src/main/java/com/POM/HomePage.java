@@ -114,81 +114,81 @@ public class HomePage extends Base{
 	
 	public void ClickOnPIM_Module()
 	{
-		if(Admin_Module.isDisplayed())
+		if(PIM_Module.isDisplayed())
 		{
-			Admin_Module.click();
+			PIM_Module.click();
 		}
 	}
 	
 	public void ClickOnLeave_Module()
 	{
-		if(Admin_Module.isDisplayed())
+		if(Leave_Module.isDisplayed())
 		{
-			Admin_Module.click();
+			Leave_Module.click();
 		}
 	}
 	
 	public void ClickOnTime_Module()
 	{
-		if(Admin_Module.isDisplayed())
+		if(Time_Module.isDisplayed())
 		{
-			Admin_Module.click();
+			Time_Module.click();
 		}
 	}
 	
 	public void ClickOnRecruitment_Module()
 	{
-		if(Admin_Module.isDisplayed())
+		if(Recruitment_Module.isDisplayed())
 		{
-			Admin_Module.click();
+			Recruitment_Module.click();
 		}
 	}
 	
 	public void ClickOnMyInfo_Module()
 	{
-		if(Admin_Module.isDisplayed())
+		if(MyInfo_Module.isDisplayed())
 		{
-			Admin_Module.click();
+			MyInfo_Module.click();
 		}
 	}
 	
 	public void ClickOnPerformance_Module()
 	{
-		if(Admin_Module.isDisplayed())
+		if(Performance_Module.isDisplayed())
 		{
-			Admin_Module.click();
+			Performance_Module.click();
 		}
 	}
 	
-	public void ClickOnDashboard_Module()
+	public void ClickOnDirectory_Module()
 	{
-		if(Admin_Module.isDisplayed())
+		if(Directory_Module.isDisplayed())
 		{
-			Admin_Module.click();
+			Directory_Module.click();
 		}
 	}
 	
 	public void ClickOnMaintenance_Module()
 	{
-		if(Admin_Module.isDisplayed())
+		if(Maintenance_Module.isDisplayed())
 		{
-			Admin_Module.click();
+			Maintenance_Module.click();
 		}
 	}
 	
 	public void ClickOnClaim_Module()
 	{
-		if(Admin_Module.isDisplayed())
+		if(Claim_Module.isDisplayed())
 		{
-			Admin_Module.click();
+			Claim_Module.click();
 		}
 	}
 	
 	public void ClickOnBuzz_Module()
 	{
-		if(Admin_Module.isDisplayed())
+		if(Buzz_Module.isDisplayed())
 		{
-			Admin_Module.click();
+			Buzz_Module.click();
 		}
 	}
 }

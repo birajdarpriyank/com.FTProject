@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.devtools.v109.dom.model.ShadowRootPopped;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -73,11 +74,11 @@ public class HomeDashboardTest extends Base{
 		home.ClickOnPIM_Module();
 		
 		String ActualTitle = driver.getTitle();
-		String ExpectedTitle = prop.getProperty("");
+		String ExpectedTitle = prop.getProperty("PIMModuleTitle");
 		soft.assertEquals(ActualTitle, ExpectedTitle);
 		
 		String Actual = driver.getCurrentUrl();
-		String Expected = prop.getProperty("");
+		String Expected = prop.getProperty("PIMModuleURL");
 		Assert.assertEquals(Actual, Expected);
 	}
 	
@@ -88,11 +89,11 @@ public class HomeDashboardTest extends Base{
 		home.ClickOnLeave_Module();
 		
 		String ActualTitle = driver.getTitle();
-		String ExpectedTitle = prop.getProperty("");
+		String ExpectedTitle = prop.getProperty("LeaveModuleTitle");
 		soft.assertEquals(ActualTitle, ExpectedTitle);
 		
 		String Actual = driver.getCurrentUrl();
-		String Expected = prop.getProperty("");
+		String Expected = prop.getProperty("LeaveModuleURL");
 		Assert.assertEquals(Actual, Expected);
 	}
 	
@@ -102,11 +103,11 @@ public class HomeDashboardTest extends Base{
 		home.ClickOnTime_Module();
 		
 		String ActualTitle = driver.getTitle();
-		String ExpectedTitle = prop.getProperty("");
+		String ExpectedTitle = prop.getProperty("TimeModuleTitle");
 		soft.assertEquals(ActualTitle, ExpectedTitle);
 		
 		String Actual = driver.getCurrentUrl();
-		String Expected = prop.getProperty("");
+		String Expected = prop.getProperty("TimeModuleURL");
 		Assert.assertEquals(Actual, Expected);
 	}
 	
@@ -118,11 +119,11 @@ public class HomeDashboardTest extends Base{
 		home.ClickOnRecruitment_Module();
 		
 		String ActualTitle = driver.getTitle();
-		String ExpectedTitle = prop.getProperty("");
+		String ExpectedTitle = prop.getProperty("RecruitmentTitle");
 		soft.assertEquals(ActualTitle, ExpectedTitle);
 		
 		String Actual = driver.getCurrentUrl();
-		String Expected = prop.getProperty("");
+		String Expected = prop.getProperty("RecruitmentURL");
 		Assert.assertEquals(Actual, Expected);
 	}
 	
@@ -132,11 +133,11 @@ public class HomeDashboardTest extends Base{
 		home.ClickOnMyInfo_Module();
 		
 		String ActualTitle = driver.getTitle();
-		String ExpectedTitle = prop.getProperty("");
+		String ExpectedTitle = prop.getProperty("MyInfoTitle");
 		soft.assertEquals(ActualTitle, ExpectedTitle);
 		
 		String Actual = driver.getCurrentUrl();
-		String Expected = prop.getProperty("");
+		String Expected = prop.getProperty("MYInfoURL");
 		Assert.assertEquals(Actual, Expected);
 	}
 	
@@ -146,25 +147,25 @@ public class HomeDashboardTest extends Base{
 		home.ClickOnPerformance_Module();
 		
 		String ActualTitle = driver.getTitle();
-		String ExpectedTitle = prop.getProperty("");
+		String ExpectedTitle = prop.getProperty("PerformanceTitle");
 		soft.assertEquals(ActualTitle, ExpectedTitle);
 		
 		String Actual = driver.getCurrentUrl();
-		String Expected = prop.getProperty("");
+		String Expected = prop.getProperty("PerformanceURL");
 		Assert.assertEquals(Actual, Expected);
 	}
 	
 	@Test 
-	public void ValidateClickedOnDashboard_Module()
+	public void ValidateClickedOnDirectory_Module()
 	{
-		home.ClickOnDashboard_Module();
+		home.ClickOnDirectory_Module();
 		
 		String ActualTitle = driver.getTitle();
-		String ExpectedTitle = prop.getProperty("");
+		String ExpectedTitle = prop.getProperty("DirectoryTitle");
 		soft.assertEquals(ActualTitle, ExpectedTitle);
 		
 		String Actual = driver.getCurrentUrl();
-		String Expected = prop.getProperty("");
+		String Expected = prop.getProperty("DirectoryURL");
 		Assert.assertEquals(Actual, Expected);
 	}
 	
@@ -174,11 +175,11 @@ public class HomeDashboardTest extends Base{
 		home.ClickOnMaintenance_Module();
 		
 		String ActualTitle = driver.getTitle();
-		String ExpectedTitle = prop.getProperty("");
+		String ExpectedTitle = prop.getProperty("MaintenanceTitle");
 		soft.assertEquals(ActualTitle, ExpectedTitle);
 		
 		String Actual = driver.getCurrentUrl();
-		String Expected = prop.getProperty("");
+		String Expected = prop.getProperty("MaintenanceURL");
 		Assert.assertEquals(Actual, Expected);
 	}
 	
@@ -188,11 +189,11 @@ public class HomeDashboardTest extends Base{
 		home.ClickOnClaim_Module();
 		
 		String ActualTitle = driver.getTitle();
-		String ExpectedTitle = prop.getProperty("");
+		String ExpectedTitle = prop.getProperty("ClaimTitle");
 		soft.assertEquals(ActualTitle, ExpectedTitle);
 		
 		String Actual = driver.getCurrentUrl();
-		String Expected = prop.getProperty("");
+		String Expected = prop.getProperty("ClaimURL");
 		Assert.assertEquals(Actual, Expected);
 	}
 	
@@ -202,12 +203,18 @@ public class HomeDashboardTest extends Base{
 		home.ClickOnBuzz_Module();
 		
 		String ActualTitle = driver.getTitle();
-		String ExpectedTitle = prop.getProperty("");
+		String ExpectedTitle = prop.getProperty("BuzzTitle");
 		soft.assertEquals(ActualTitle, ExpectedTitle);
 		
 		String Actual = driver.getCurrentUrl();
-		String Expected = prop.getProperty("");
+		String Expected = prop.getProperty("BuzzURL");
 		Assert.assertEquals(Actual, Expected);
+	}
+	
+	@AfterTest
+	public void TearDown()
+	{
+		driver.quit();
 	}
 	
 	

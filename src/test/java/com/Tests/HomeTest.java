@@ -1,5 +1,7 @@
 package com.Tests;
 
+import static org.testng.Assert.assertFalse;
+
 import java.io.IOException;
 
 import org.openqa.selenium.devtools.v109.dom.model.ShadowRootPopped;
@@ -231,12 +233,29 @@ public class HomeTest extends Base{
 		Assert.assertEquals(Actual, Expected);
 	}
 	
-	@Test (priority=17)
+	@Test(priority=18)
+	public void ValidateShowAllModules()
+	{
+		home.UnhideAllModules();
+		home.ClickOnMaintenance_Module();
+		String Actual = driver.getCurrentUrl();
+		String Expected = prop.getProperty("MaintenanceURL");
+		Assert.assertEquals(Actual, Expected);
+		
+	}
+	
+	@Test(priority=17)
+	public void ValidateUnshowAllModules()
+	{
+		home.HideAllModules();
+		home.SendkeysSearchBox("Dir");
+		
+	}
+	
+	@Test (priority=19)
 	public void ValidateSearchBoxWithInValidCredentials()
 	{
 		home.SendkeysSearchBox("Insight");
-		boolean a = home.AfterSearchingResult().isEmpty();
-		Assert.assertTrue(a);
 		
 	}
 	

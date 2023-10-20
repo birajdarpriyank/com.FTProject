@@ -12,6 +12,7 @@ import com.POJO.Base;
 
 public class HomePage extends Base{
 	
+	
 	{
 		PageFactory.initElements(driver, this);
 	}
@@ -22,25 +23,25 @@ public class HomePage extends Base{
 	@FindBy(xpath="//button[@class='oxd-icon-button oxd-main-menu-button']")
 	private WebElement HideElement;
 	
-	@FindBy(xpath="//input[@fdprocessedid='ruwi0k']") 
+	@FindBy(xpath="//input[@placeholder='Search']") 
 	private WebElement SearchInput;
 	
-	@FindBy(xpath="//a[@class='oxd-main-menu-item active toggle']")
+	@FindBy(xpath="//span[text()='Admin']")
 	private WebElement Admin_Module;
 	
-	@FindBy(xpath="(//a[@class='oxd-main-menu-item toggle'])[1]")
+	@FindBy(xpath="//span[text()='PIM']")
 	private WebElement PIM_Module;
 	
-	@FindBy(xpath="(//a[@class='oxd-main-menu-item toggle'])[2]")
+	@FindBy(xpath="//span[text()='Leave']")
 	private WebElement Leave_Module;
 	
-	@FindBy(xpath="(//a[@class='oxd-main-menu-item toggle'])[3]") 
+	@FindBy(xpath="//span[text()='Time']") 
 	private WebElement Time_Module;
 	
-	@FindBy(xpath="(//a[@class='oxd-main-menu-item toggle'])[4]") 
+	@FindBy(xpath="//span[text()='My Info']") 
 	private WebElement Recruitment_Module;
 	
-	@FindBy(xpath="(//a[@class='oxd-main-menu-item toggle'])[5]") 
+	@FindBy(xpath="//span[text()='My Info']") 
 	private WebElement MyInfo_Module;
 	
 	@FindBy(xpath="//span[text()='Performance']")
@@ -64,7 +65,7 @@ public class HomePage extends Base{
 	@FindBy(xpath="//span[@class='oxd-userdropdown-tab']")
 	private WebElement Profile;
 	
-	@FindBy(xpath="//button[@title='Help']")
+	@FindBy(xpath="//button[@class='oxd-icon-button']")
 	private WebElement Help;
 	
 	@FindBy(xpath="//ul[@role='menu']")
@@ -109,7 +110,7 @@ public class HomePage extends Base{
 		{
 			HideElement.click();
 		}
-		System.out.println("** Clicked on HideElement **");
+		System.out.println("** Clicked on HideElement Module **");
 	}
 	
 	public void ClickOnAdmin_Module()
@@ -118,6 +119,7 @@ public class HomePage extends Base{
 		{
 			Admin_Module.click();
 		}
+		System.out.println("** Clicked on Admin Module **");
 	}
 	
 	public void ClickOnPIM_Module()
@@ -126,6 +128,7 @@ public class HomePage extends Base{
 		{
 			PIM_Module.click();
 		}
+		System.out.println("** Clicked on PIM Module **");
 	}
 	
 	public void ClickOnLeave_Module()
@@ -134,6 +137,7 @@ public class HomePage extends Base{
 		{
 			Leave_Module.click();
 		}
+		System.out.println("** Clicked on Leave Module **");
 	}
 	
 	public void ClickOnTime_Module()
@@ -142,6 +146,7 @@ public class HomePage extends Base{
 		{
 			Time_Module.click();
 		}
+		System.out.println("** Clicked on Time Module **");
 	}
 	
 	public void ClickOnRecruitment_Module()
@@ -150,6 +155,7 @@ public class HomePage extends Base{
 		{
 			Recruitment_Module.click();
 		}
+		System.out.println("** Clicked on Recruitment Module **");
 	}
 	
 	public void ClickOnMyInfo_Module()
@@ -158,6 +164,7 @@ public class HomePage extends Base{
 		{
 			MyInfo_Module.click();
 		}
+		System.out.println("** Clicked on MyInfo module **");
 	}
 	
 	public void ClickOnPerformance_Module()
@@ -166,6 +173,7 @@ public class HomePage extends Base{
 		{
 			Performance_Module.click();
 		}
+		System.out.println("** Clicked on Performance Module **");
 	}
 	
 	public void ClickOnDirectory_Module()
@@ -174,6 +182,7 @@ public class HomePage extends Base{
 		{
 			Directory_Module.click();
 		}
+		System.out.println("** Clicked on Directory Module **");
 	}
 	
 	public void ClickOnMaintenance_Module()
@@ -182,6 +191,7 @@ public class HomePage extends Base{
 		{
 			Maintenance_Module.click();
 		}
+		System.out.println("** Clicked on Maintenance Module **");
 	}
 	
 	public void ClickOnClaim_Module()
@@ -190,7 +200,7 @@ public class HomePage extends Base{
 		{
 			Claim_Module.click();
 		}
-		System.out.println("** Clicked on ");
+		System.out.println("** Clicked on Claim Module **");
 	}
 	
 	public void ClickOnBuzz_Module()
@@ -200,7 +210,7 @@ public class HomePage extends Base{
 			Buzz_Module.click();
 		}
 		
-		System.out.println("** Clicked on Admin **");
+		System.out.println("** Clicked on Buzz Module **");
 	}
 	
 	public void ClickOnHelp()
@@ -209,11 +219,13 @@ public class HomePage extends Base{
 		{
 			Help.click();
 		}
+		System.out.println("** Clicked on Help Button **");
 	}
 	
 	public void SendkeysSearchBox(String e)
 	{
 		SearchInput.sendKeys(e);
+		System.out.println("** SendKeys in SearchBox **");
 	}
 	
 	public void HideAllModules()
@@ -222,6 +234,7 @@ public class HomePage extends Base{
 		{
 			CloseIcon.click();
 		}
+		System.out.println("** Clicked on CloseIcon **");
 	}
 	
 	public void UnhideAllModules()
@@ -230,6 +243,7 @@ public class HomePage extends Base{
 		{
 			ModulesListIcon.click();
 		}
+		System.out.println("** Clicked on ModuleListIcon **");
 	}
 
 	
@@ -239,13 +253,7 @@ public class HomePage extends Base{
 	     {
 	    	 Profile.click();
 	     }
+	     System.out.println("** Clicked on Profile **");
 	}
-	
-	public String AfterSearchingResult()
-	{
-		String a = AfterSearchingelemet.getText();
-		return a;
-	}
-	
 
 }

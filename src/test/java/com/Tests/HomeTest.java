@@ -28,8 +28,7 @@ public class HomeTest extends Base{
 		login = new LoginPage();
 		login.setInputusername(login.getUsername());
 		login.setInputpassword(login.getPassword());
-		login.ClickOnLoginButton();
-		home = new HomePage();
+	    home = login.ClickOnLoginButton();
 	}
 	
 	@Test (priority=1)

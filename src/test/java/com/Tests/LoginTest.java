@@ -21,7 +21,7 @@ import com.POJO.Base;
 import com.POM.LoginPage;
 import com.Utilities.utility;
 
-@Listeners(Reports.Listener.class)
+@Listeners(Reports.MyListener.class)
 public class LoginTest extends Base {
 	
 LoginPage login;

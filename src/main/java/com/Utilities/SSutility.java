@@ -15,9 +15,9 @@ public class SSutility extends Base{
 	
 	
 	
-	public static void Screenshot() throws IOException
+	public static void Screenshot(String methodname) throws IOException
 	{
 		File take = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(take, new File(".\\src\\test\\resources\\ScreenShots"));
+		FileUtils.copyFile(take, new File(".\\src\\test\\resources\\ScreenShots"+methodname+".jpg"));
 	}
 }

@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -13,6 +14,9 @@ import com.POM.HomePage;
 import com.POM.LoginPage;
 import com.POM.MaintenancePage;
 
+import Reports.MyListener;
+
+@Listeners(MyListener.class)
 public class MaintenanceTest extends Base {
 	
 	
@@ -29,10 +33,8 @@ public class MaintenanceTest extends Base {
 		login = new LoginPage();
 		login.setInputusername(login.getUsername());
 		login.setInputpassword(login.getPassword());
-		login.ClickOnLoginButton();
-		home = new HomePage();
-		home.ClickOnMaintenance_Module();
-		maintc = new MaintenancePage();
+	    home = login.ClickOnLoginButton();
+		maintc = home.ClickOnMaintenance_Module();
 	}
 	
 	@Test
@@ -63,7 +65,9 @@ public class MaintenanceTest extends Base {
 	public void ValidateUserNameisDisabled()
 	{
 		String Actual = maintc.GetUserName();
-		String Expected = login.getUsername();
+		System.out.println(Actual);
+	    String Expected = prop.getProperty("UserName");
+		System.out.println(Expected);
 		Assert.assertEquals(Actual, Expected);
 	}
 	

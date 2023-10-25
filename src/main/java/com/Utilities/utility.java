@@ -11,9 +11,12 @@ import java.util.Map;
 
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.DataProvider;
 
 import com.POJO.Base;
 
@@ -27,13 +30,87 @@ public class utility extends Base{
 		  
 	 }
 	 
-	public static Sheet getsheet(String sheetname) throws IOException
+	public static Sheet getsheet(int sheetnum) throws IOException
 	{
-		FileInputStream fileinputstream = new FileInputStream(projectpath+"\\src\\main\\resources\\Exeldata\\OrangeHrmLogin.xlsx");
+		FileInputStream file = new FileInputStream("E:\\DESK DATA\\eclipse-workspace\\com.cucumberprojectshrhealthcare\\src\\test\\resources\\ExcelData\\OrangeHRM.xlsx");
 		
-		Sheet sh=WorkbookFactory.create(fileinputstream).getSheet(sheetname);
-		return sh;
+		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		
+		XSSFSheet sheet = workbook.getSheetAt(sheetnum);
+		
+		//Sheet sh=WorkbookFactory.create(fileinputstream).getSheet(sheetname);
+		return sheet;
 	}
+	
+	@DataProvider(name="logindata")
+	public static Object[][] getdata(Sheet sh) throws IOException
+	{
+		int columncount=0;
+		
+		int rowcount = sh.getLastRowNum();
+		System.out.println(rowcount);
+		
+		HashMap<Object, Object> finaldata = new HashMap();
+		
+		Object[][] exceldata = new Object [rowcount][columncount];
+		
+		for(int i=0; i<rowcount; i++)
+		{
+			
+			HashMap<Object, Object> data = new HashMap();
+			
+			columncount = sh.getRow(i).getLastCellNum();
+			System.out.println(columncount);
+			
+			for(int j=0; j<columncount; j++)
+			{
+				if(sh.getRow(i).getCell(j).getCellType().toString().equalsIgnoreCase("String"))
+				{
+					data.put(sh.getRow(0).getCell(j).getStringCellValue(), sh.getRow(i+1).getCell(j).getStringCellValue());
+				}
+				
+				else if(sh.getRow(i).getCell(j).getCellType().toString().equalsIgnoreCase("numeric"))
+				{
+					data.put(sh.getRow(0).getCell(j).getNumericCellValue(), sh.getRow(i+1).getCell(j).getNumericCellValue());
+				}
+				else
+				{
+					System.out.println("Cell type not matched");
+				}
+			}
+			exceldata[i][0] = data;
+			System.out.println(data);
+			data.forEach(finaldata :: put);
+			System.out.println(data);
+			
+		}
+		return exceldata ;
+				
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	public static Object getSingleData(int rowNum,int cellNum,Sheet sh)
 	{

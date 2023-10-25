@@ -5,11 +5,8 @@
     <classes>
       <class name="com.Tests.LoginTest">
         <methods>
-          <include name="ValidateLoginPageLogo"/>
           <include name="SetUp"/>
-          <include name="LoginWithBlankCredentials"/>
-          <include name="LoginWithUserNameOnly"/>
-          <include name="ValidateOrangeHRMIncLink"/>
+          <include name="gtdata"/>
           <include name="TearDown"/>
         </methods>
       </class> <!-- com.Tests.LoginTest -->

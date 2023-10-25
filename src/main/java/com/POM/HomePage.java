@@ -113,97 +113,118 @@ public class HomePage extends Base{
 		System.out.println("** Clicked on HideElement Module **");
 	}
 	
-	public void ClickOnAdmin_Module()
+	public AdminPage ClickOnAdmin_Module()
 	{
 		if(Admin_Module.isDisplayed())
 		{
 			Admin_Module.click();
 		}
 		System.out.println("** Clicked on Admin Module **");
+		
+		return new AdminPage();
 	}
 	
-	public void ClickOnPIM_Module()
+	public PIMPage ClickOnPIM_Module()
 	{
 		if(PIM_Module.isDisplayed())
 		{
 			PIM_Module.click();
 		}
 		System.out.println("** Clicked on PIM Module **");
+		
+		return new PIMPage();
 	}
 	
-	public void ClickOnLeave_Module()
+	public LeavePage ClickOnLeave_Module()
 	{
 		if(Leave_Module.isDisplayed())
 		{
 			Leave_Module.click();
 		}
 		System.out.println("** Clicked on Leave Module **");
+		
+		return new LeavePage();
 	}
 	
-	public void ClickOnTime_Module()
+	public TimePage ClickOnTime_Module()
 	{
 		if(Time_Module.isDisplayed())
 		{
 			Time_Module.click();
 		}
 		System.out.println("** Clicked on Time Module **");
+		
+		return new TimePage();
 	}
 	
-	public void ClickOnRecruitment_Module()
+	public RecruitmentPage ClickOnRecruitment_Module()
 	{
 		if(Recruitment_Module.isDisplayed())
 		{
 			Recruitment_Module.click();
 		}
 		System.out.println("** Clicked on Recruitment Module **");
+		
+		return new RecruitmentPage();
 	}
 	
-	public void ClickOnMyInfo_Module()
+	public MyInfoPage ClickOnMyInfo_Module()
 	{
 		if(MyInfo_Module.isDisplayed())
 		{
 			MyInfo_Module.click();
 		}
 		System.out.println("** Clicked on MyInfo module **");
+		
+		return new MyInfoPage();
 	}
 	
-	public void ClickOnPerformance_Module()
+	public Performance ClickOnPerformance_Module()
 	{
 		if(Performance_Module.isDisplayed())
 		{
 			Performance_Module.click();
 		}
 		System.out.println("** Clicked on Performance Module **");
+		
+		return new Performance();
 	}
 	
-	public void ClickOnDirectory_Module()
+	public Directory ClickOnDirectory_Module()
 	{
 		if(Directory_Module.isDisplayed())
 		{
 			Directory_Module.click();
 		}
 		System.out.println("** Clicked on Directory Module **");
+		
+		return new Directory();
 	}
 	
-	public void ClickOnMaintenance_Module()
+	public MaintenancePage ClickOnMaintenance_Module()
 	{
 		if(Maintenance_Module.isDisplayed())
 		{
 			Maintenance_Module.click();
 		}
 		System.out.println("** Clicked on Maintenance Module **");
+		
+		return new MaintenancePage();
 	}
 	
-	public void ClickOnClaim_Module()
+	public ClaimPage ClickOnClaim_Module()
 	{
+		
 		if(Claim_Module.isDisplayed())
 		{
 			Claim_Module.click();
 		}
 		System.out.println("** Clicked on Claim Module **");
+		
+		return new ClaimPage();
 	}
 	
-	public void ClickOnBuzz_Module()
+	public BuzzPage ClickOnBuzz_Module()
 	{
 		if(Buzz_Module.isDisplayed())
 		{
@@ -211,6 +232,8 @@ public class HomePage extends Base{
 		}
 		
 		System.out.println("** Clicked on Buzz Module **");
+		
+		return new BuzzPage();
 	}
 	
 	public void ClickOnHelp()

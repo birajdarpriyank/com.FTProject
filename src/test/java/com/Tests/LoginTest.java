@@ -3,18 +3,25 @@ package com.Tests;
 import java.io.IOException;
 
 
-import java.lang.reflect.Method;
 
+import java.lang.reflect.Method;
+import java.util.HashMap;
+
+import org.apache.poi.ss.usermodel.Sheet;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.POJO.Base;
 import com.POM.LoginPage;
+import com.Utilities.utility;
 
+@Listeners(Reports.Listener.class)
 public class LoginTest extends Base {
 	
 LoginPage login;
@@ -47,6 +54,16 @@ SoftAssert soft = new SoftAssert();
 		soft.assertEquals(Actual, Expected);
 		
 	}
+	
+//	@Test(dataProvider = "logindata")
+//	public void gtdata(HashMap<String, String> data) throws IOException
+//	{
+//		Sheet sh = utility.getsheet(0);
+//		Object [] [] data1 = utility.getdata(sh);
+//	         login.setInputusername(data.get("Email"));
+//	         login.setInputpassword(data.get("Password"));
+//	}
+	
 	@Test(priority=2)
 	public void ValidateLoginPageURL()
 	{
@@ -59,6 +76,7 @@ SoftAssert soft = new SoftAssert();
 	@Test(priority=3)
 	public void LoginWithValidCredential() throws InterruptedException
 	{
+		
 		login.setInputusername(login.getUsername());
 		login.setInputpassword(login.getPassword());
 		Thread.sleep(8000);

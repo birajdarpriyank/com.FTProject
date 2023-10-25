@@ -35,6 +35,20 @@ public class MaintenancePage extends Base {
 	@FindBy(xpath="//button[@type='submit']")
 	private WebElement submitbutton;
 	
+	public String GetMaintenanceTitle()
+	{
+		String a = driver.getTitle();
+		System.out.println("** Get page Title **");
+		return a;
+	}
+	
+	public String GetCurrentURL()
+	{
+		String a = driver.getCurrentUrl();
+		System.out.println("** Get Current URL of maintenance **");
+		return a;
+	}
+	
 	
 	public String GetToast_Messege()
 	{

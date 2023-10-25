@@ -100,7 +100,7 @@ public class ForgottenPasswordPage extends Base {
 	{
 		OrangeHRMInc.click();
 		System.out.println("** Clicked on OrangeHRMIncLink **");
-		return login.HRMInc;
+		return new OrangeHRMIncPage();
 	}
 	
 

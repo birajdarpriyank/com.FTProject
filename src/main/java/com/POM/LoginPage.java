@@ -12,8 +12,6 @@ import com.POJO.Base;
 
 public class LoginPage extends Base{
 	
-	HomePage home = new HomePage();
-	public OrangeHRMIncPage HRMInc = new OrangeHRMIncPage();
 	
 	{
 		PageFactory.initElements(driver,this);
@@ -91,9 +89,12 @@ public class LoginPage extends Base{
      
      public HomePage ClickOnLoginButton()
      {
-    	LoginButton.click();
+    	 if(LoginButton.isDisplayed()&&LoginButton.isEnabled())
+    	 {
+    	    LoginButton.click();
+    	 }
     	 System.out.println("** Clicked on LoginButton **");
-    	return home;
+    	return new HomePage();
      }
 
 	
@@ -146,18 +147,22 @@ public class LoginPage extends Base{
 		return a;
 	}
 	
-	public void ClickOnForgottenPasswordLink()
+	public ForgottenPasswordPage ClickOnForgottenPasswordLink()
 	{
+		if(ForgottenPasswordLink.isDisplayed()&&ForgottenPasswordLink.isEnabled())
+		{
 		ForgottenPasswordLink.click();
+		}
 		System.out.println("** Clicked on ForgottenPasswordLink **");
 		
+		return new ForgottenPasswordPage();
 	}
 	
 	public OrangeHRMIncPage ClickOnOrangeHRMIncLink()
 	{
 		OrangeHRMIncLink.click();
 		System.out.println("** Clicked on OrangeHRMIncLink **");
-		return HRMInc;
+		return new OrangeHRMIncPage();
 	}
 	
 
